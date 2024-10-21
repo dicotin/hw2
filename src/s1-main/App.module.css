@@ -1,0 +1,27 @@
+.App {
+    --header_height: 60px;
+}
+
+.hw {
+    margin-top: 10px;
+    border-top: lightgray 1px solid;
+    border-bottom: lightgray 1px solid;
+    font-family: 'Helvetica', sans-serif;
+
+    margin-bottom: 200px;
+}
+
+.hwTitle {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 22px;
+    color: black;
+    font-weight: 600;
+
+    margin-top: 131px;
+    margin-left: 70px;
+}
+.messages {
+    display: flex;
+    flex-direction: column;
+
+}

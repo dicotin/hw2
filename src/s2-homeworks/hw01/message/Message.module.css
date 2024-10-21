@@ -1,0 +1,66 @@
+.message {
+    align-self: flex-end;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
+
+.imageAndText {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imageAndText img {
+    width: 48px;
+    margin-right: 50px;
+}
+
+.text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #0066CC;
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+
+    color: white;
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-right: 10px;
+}
+
+.text:after {
+    content: ''; /* Псевдоэлемент без контента */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Располагаем внизу */
+    right: -11px; /* Сдвигаем вправо за пределы блока */
+    width: 0;
+    height: 0;
+    border: 20px solid transparent; /* Треугольник из прозрачных границ */
+    border-bottom-color: #0066CC; /* Цвет треугольника совпадает с цветом блока */
+    border-left: 0; /* Убираем правую границу */
+}
+
+
+.name {
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.messageText {
+    font-size: 15px;
+}
+
+.time {
+    align-self: flex-end;
+    font-size: 12px;
+    margin-right: 60px;
+}

@@ -1,0 +1,64 @@
+.friendMessage {
+    align-self:flex-start;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
+
+.friendImageAndText {
+    display: flex;
+    flex-direction: row;
+}
+
+.friendImageAndText img {
+    width: 48px;
+    margin-left: 50px;
+}
+
+.friendText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #F5F7FB;
+    border-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+    color: black;
+
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    margin-left: 10px;
+}
+
+.friendText:after {
+    content: ''; /* Псевдоэлемент без контента */
+    position: absolute; /* Абсолютное позиционирование относительно родителя */
+    bottom: 0; /* Располагаем внизу */
+    left: -11px; /* Сдвигаем вправо за пределы блока */
+    width: 0;
+    height: 0;
+    border: 20px solid transparent; /* Треугольник из прозрачных границ */
+    border-bottom-color: #F5F7FB; /* Цвет треугольника совпадает с цветом блока */
+    border-right: 0; /* Убираем правую границу */
+}
+
+.friendName {
+    align-self: flex-start;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.friendMessageText {
+
+}
+
+.friendTime {
+    align-self: flex-start;
+    font-size: 12px;
+    margin-left: 60px;
+}
